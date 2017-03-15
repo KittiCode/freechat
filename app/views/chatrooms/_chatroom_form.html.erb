@@ -1,0 +1,5 @@
+<%= form_for @chatroom, remote: true do |f| %>
+    <h1>topic</h1>
+	<%= f.text_field :topic %>
+	<%= f.submit "Create a new chatroom" %>
+<% end %>
