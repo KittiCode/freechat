@@ -20,7 +20,7 @@ class ChatroomsController < ApplicationController
     @chatroom = Chatroom.new(chatroom_params)
     if @chatroom.save
       respond_to do |format|
-        format.html { redirect_to @chatroom }
+        redirect_to chatrooms_path
         format.js
       end
     else
