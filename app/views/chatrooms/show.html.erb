@@ -1,2 +1,9 @@
-<h1>Chatrooms#show</h1>
-<p>Find me in app/views/chatrooms/show.html.erb</p>
+<h1><%= @chatroom.topic %></h1>
+<!-- All sent messages -->
+<% if @chatroom.messages.any? %>
+<%= render partial: 'messages/message', collection: @chatroom.messages%>
+
+<% else %>
+<% end %>
+<!-- message form -->
+<%= render partial: 'messages/message_form', locals: {chatroom: @chatroom}%>

@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
-  get 'chatrooms', to: 'chatrooms#index'
-	root 'welcome#about'
-get '/signup', to: "registrations#new"
+  root "welcome#about"
+  
+  get '/signup', to: "registrations#new"
   post '/signup', to: "registrations#create"
 
   get 'login', to: "sessions#new"
-  get 'users', to: 'users#new'
+  post '/login', to: "sessions#create" 
+  delete '/logout', to: "sessions#destroy"
 
-resources :chatrooms, param: :slug
+  get 'users/:id', to: "users#show", as: "profile"
 
+  resources :chatrooms
+  resources :messages
  
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

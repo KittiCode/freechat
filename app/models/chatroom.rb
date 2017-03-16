@@ -1,5 +1,5 @@
 class Chatroom < ApplicationRecord
-	has_many :messages, through: :users
-	has_many :users, dependent: :destroy
+	has_many :messages, dependent: :destroy
+  has_many :users, through: :messages
 	validates :topic, presence: true, uniqueness: true
 end
