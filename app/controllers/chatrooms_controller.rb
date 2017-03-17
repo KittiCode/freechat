@@ -21,6 +21,7 @@ class ChatroomsController < ApplicationController
     if @chatroom.save
       respond_to do |format|
         redirect_to chatrooms_path
+        # redirect_to @chatroom
         format.js
       end
     else

@@ -1,9 +1,24 @@
 <h1><%= @chatroom.topic %></h1>
 <!-- All sent messages -->
+<div id="box">
 <% if @chatroom.messages.any? %>
 <%= render partial: 'messages/message', collection: @chatroom.messages%>
+<div id="gototop"></div>
 
 <% else %>
 <% end %>
+</div>
 <!-- message form -->
 <%= render partial: 'messages/message_form', locals: {chatroom: @chatroom}%>
+
+	<%= link_to "Back to Chatrooms", chatrooms_path, :id=>"bottom" %>
+<i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+<script>
+	function bottom() {
+    document.getElementById( 'gototop' ).scrollIntoView();
+    window.setTimeout( function () { top(); }, 2000 );
+};
+
+bottom();
+</script>
