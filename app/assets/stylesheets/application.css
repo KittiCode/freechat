@@ -153,4 +153,10 @@ li,.list{
     text-decoration: none;
 }
 
+.floatright{
+	float: right;
+	color: white;
+	font-size: 20px;
+}
+
  
