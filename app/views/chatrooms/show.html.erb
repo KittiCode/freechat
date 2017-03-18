@@ -5,7 +5,7 @@
 <div id="box">
 <% if @chatroom.messages.any? %>
 <%= render partial: 'messages/message', collection: @chatroom.messages%>
-<div id="gototop"></div>
+<div id="gotobottom"></div>
 
 <% else %>
 <% end %>
@@ -18,7 +18,7 @@
 
 <script>
 	function bottom() {
-    document.getElementById( 'gototop' ).scrollIntoView();
+    document.getElementById( 'gotobottom' ).scrollIntoView();
     window.setTimeout( function () { top(); }, 2000 );
 };
 

@@ -33,9 +33,5 @@ ActiveRecord::Schema.define(version: 20170315062921) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-  
-  add_foreign_key "messages", "chatrooms"
-  add_foreign_key "messages", "users"
-
 
 end
