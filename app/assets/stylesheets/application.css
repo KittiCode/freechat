@@ -15,8 +15,8 @@
  */
  
  
-@import "font-awesome-sprockets";
-@import "font-awesome";
+/*@import "font-awesome-sprockets";*/
+/*@import "font-awesome";*/
 
  body {
  /*background: #DCE35B;*/
@@ -35,7 +35,7 @@ background: linear-gradient(to left, #56CCF2 , #2F80ED); /* W3C, IE 10+/ Edge, F
  }
 
 
- #message{
+ .message{
  	font-size: 20px;
  	text-align: left;
  	 

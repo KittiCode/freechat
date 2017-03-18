@@ -6,5 +6,8 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     # Called when the subscription has been terminated by the server
 
   received: (data) ->
-  	alert data.content
+  	unless data.content.blank?
+      $('#box').append '<div class="message">' +
+        '<div class="message-user">' + data.username + ":" + '</div>' +
+        '<div class="message-content">' + data.content + '</div>' + '</div>'
     # Called when there's incoming data on the websocket for this channel
