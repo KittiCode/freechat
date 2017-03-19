@@ -3,24 +3,20 @@
 
 <!-- All sent messages -->
 <div id="box">
-<% if @chatroom.messages.any? %>
-<%= render partial: 'messages/message', collection: @chatroom.messages%>
-<div id="gotobottom"></div>
+<div id="message-box" class="message-box">
+	
+	<% if @chatroom.messages.any? %>
+	<div id="hahaha">
+		<%= render partial: 'messages/message', collection: @chatroom.messages%>
+	
+	</div>
 
-<% else %>
-<% end %>
+	<% end %>
+
+</div>
 </div>
 <!-- message form -->
 <%= render partial: 'messages/message_form', locals: {chatroom: @chatroom}%>
 
 	<%= link_to "Back to Chatrooms", chatrooms_path, :id=>"bottom" %>
-<i class="fa fa-arrow-left" aria-hidden="true"></i>
 
-<script>
-	function bottom() {
-    document.getElementById( 'gotobottom' ).scrollIntoView();
-    window.setTimeout( function () { top(); }, 2000 );
-};
-
-bottom();
-</script>

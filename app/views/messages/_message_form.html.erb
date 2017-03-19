@@ -1,4 +1,4 @@
-<%= form_for @message do |f|%>
+<%= form_for @message, remote: true, authenticity_token: true do |f|%>
 	<%= f.label :type_your_message %><br>
 	<%= f.text_area :content, data: {textarea: "message"}, :class=>"messagehere"%><br>
 	<%= f.hidden_field :chatroom_id, value: chatroom.id %>
