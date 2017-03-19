@@ -14,9 +14,6 @@
  *= require_self
  */
  
- 
-/*@import "font-awesome-sprockets";*/
-/*@import "font-awesome";*/
 
  body {
  /*background: #DCE35B;*/
@@ -50,7 +47,6 @@ background: linear-gradient(to left, #56CCF2 , #2F80ED); /* W3C, IE 10+/ Edge, F
     border-style: solid;
     border-radius: 10px;
 }
- }
 
  textarea {
   /*background: center;  This ruins default border */
