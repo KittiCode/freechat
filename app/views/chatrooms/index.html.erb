@@ -2,4 +2,19 @@
 <div class="image-center">
 <%= render partial: 'chatroom_form' %>
 <%= render @chatrooms %>
+
+
+
+	<h3>All Users</h3>
+	<% @users.each do |x|%>
+		<p><%= x.username %></p>
+	<% end %>
+
+
+	<h3>Online</h3>
+	<% @users.each do |x|%>
+	<p><%=%></p>
+	<% end %>
+<%= current_user.username %>
+
 </div>

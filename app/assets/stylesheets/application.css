@@ -158,5 +158,8 @@ li,.list{
 	color: white;
 	font-size: 20px;
 }
-
+.time{
+	font-size: 12px;
+	text-align: right;
+}
  

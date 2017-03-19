@@ -3,6 +3,7 @@ class ChatroomsController < ApplicationController
   def index
     @chatroom = Chatroom.new
     @chatrooms = Chatroom.all
+    @users = User.all
   end
 
   def new
@@ -42,6 +43,10 @@ class ChatroomsController < ApplicationController
   def show
     @chatroom = Chatroom.find(params[:id])
     @message = Message.new
+    @chatroom.users << current_user
+    ActionCable.server.broadcast 'room_channel',
+                                   onlineuser:  current_user.username
+                                   
   end
 
   private

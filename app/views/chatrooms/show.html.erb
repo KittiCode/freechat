@@ -1,5 +1,8 @@
 <h1><%= @chatroom.topic %></h1>
-
+<h2>Online User</h2>
+<% for x in @chatroom.user_ids do %>
+	<ul class="onlineuser"><li id="onlineuser"><%= User.find(x).username %></li></ul>
+<% end %>
 
 <!-- All sent messages -->
 <div id="box">

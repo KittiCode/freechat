@@ -11,6 +11,11 @@ App.room = App.cable.subscriptions.create "RoomChannel",
         '<strong class="message-user">' + data.username + ":" + '</strong>' + '</p>' +
         '<div class="message-content">' + data.content + '</div>' + '<p></p>'
       scroll_bottom()
+    # unless data.onlineuser.blank?
+    #   $('#onlineuser').append '<div class="onlineuser">' +
+    # data.onlineuser + '</div>'
+    
+
     # Called when there's incoming data on the websocket for this channel
 
 
