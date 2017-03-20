@@ -2,14 +2,16 @@
 	<strong class="message.user">
 		<%=message.user.username%>:
 	</strong>
+
+
 	<div class="message-content">
 		<%=message.content%>
-		<div class = "date"><%=message.created_at.strftime("%H:%M")%></div><br>
-			<div class = "day"><%=message.created_at.strftime("%d %b. %Y ")%></div>
+		
 			
-		<div class="time">
-			<div><%=message.created_at.strftime("%H:%M")%></div><br>
-			<div><%=message.created_at.strftime("%d %b. %Y ")%></div>
-		</div>
+
+			<div class="message-time"><%=message.created_at.strftime("%H:%M")%></div><br>
+			<div class="message-date"><%=message.created_at.strftime("%d %b %Y ")%></div>
+
 	</div>
+	<br>
 </p>

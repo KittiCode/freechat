@@ -1,6 +1,29 @@
 <%= form_for @message, remote: true, authenticity_token: true do |f|%><br>
-	<%= f.text_area :content, data: {textarea: "message"}, :placeholder=>"   Your Message here...",:class=>"messagehere"%><br>
+	<%= f.text_area :content, :placeholder=>"   Your Message here...",:class=>"messagehere"%><br>
+	
 	<%= f.hidden_field :chatroom_id, value: chatroom.id %>
 
-	<%= f.submit "send", data: {send: "message"},:style => "display: none;" %>
+	<%= f.submit "send",:style => "display: none;" %>
+	
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Checl this later, data: {send: "message"} part -->
+<!-- f.text_area :content, data: {textarea: "message"}, :placeholder=>"   Your Message here...",:class=>"messagehere"%><br> -->
+
+<!-- f.submit "send", data: {send: "message"},:style => "display: none;" -->

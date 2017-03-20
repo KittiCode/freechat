@@ -8,11 +8,15 @@ App.room = App.cable.subscriptions.create "RoomChannel",
   received: (data) ->
   	unless data.content.blank?
       $('#message-box').append '<p class="message">' +
-        '<strong class="message-user">' + data.username + ":" + '</strong>' + '</p>' +
-        '<div class="message-content">' + data.content + '</div>' + '<p></p>'
+        '<strong class="message-user">' + data.username + ": " + '</strong>' + '</p>' +
+        '<div class="message-content">' + data.content + '</div>' +
+          '<div class="message-time">' + data.created_at_time + '</div>' + '<br>' +
+           '<div class="message-date">' + data.created_at_date + '</div>' +'<br>' 
+
+
       scroll_bottom()
     # unless data.onlineuser.blank?
-    #   $('#onlineuser').append '<div class="onlineuser">' +
+    #   $('#onlineuser').append '<div class="onlineuser"> ' +
     # data.onlineuser + '</div>'
     
 

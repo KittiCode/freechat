@@ -6,8 +6,17 @@
 <ul class="ulnavbar">
   <li class="linavbarleft"><div id="logo"><%=link_to image_tag( 'applogo.jpg', :size => "75x59"), root_path%></div></li>
   <li class="linavbarleft"><%=link_to "freee LINE App", root_path, :class => "textlogo"%></li>
-  <!-- <li class="linavbarleft">free line app</li> -->
-  <li class="linavbarleft"><%=link_to "Chatrooms", root_path, :class => "chatrooms"%></li>
+
+  
+  <li class="linavbarleft">
+   <!-- Chatrooms button path, sign up or chatrooms -->
+    <%if current_user %>
+    <%=link_to "Chatrooms", chatrooms_path, :class => "chatrooms"%></li>
+    <% else %>
+    <%=link_to "Chatrooms", signup_path, :class => "chatrooms"%></li>
+    <% end %>
+  
+
   <li class="linavbarright"> 
     <%if current_user %>
     <div class="floatright">
@@ -29,6 +38,7 @@
 
 <h3 id="welcome">Welcome to freee Chat App</h3>
 <%= link_to "Sign Up", signup_path, :class=>"signupbox" %>
-<%= link_to "Log In", login_path, :class=>"signupbox" %>
+<center id="welcome">to chat with your friends</center>
+
 
 <%= image_tag( "banner2.png", width: '100%' ) %>
