@@ -14,20 +14,24 @@
  *= require_self
  */
  
-
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana",sans-serif;
+}
  body {
  /*background: #DCE35B;*/
  /*background: -webkit-linear-gradient(to left, #DCE35B , #45B649); */
  /*background: linear-gradient(to left, #DCE35B , #45B649);*/
- background: #56CCF2;  fallback for old browsers 
-background: -webkit-linear-gradient(to left, #56CCF2 , #2F80ED); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+ /*background: #56CCF2;  fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #56CCF2 , #2F80ED); /* Chrome 10-25, Safari 5.1-6 */*/
+/*background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 
         
  }
  h1{
- 	color: white;
+ 	color: black;
  	text-align: center;
  }
 
@@ -39,18 +43,19 @@ background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Fir
 }
 #box{
 	background: transparent;
-    width: 600px;
-    height: 500px;
+    width: 40%;
+    height: 35rem;
     overflow-y: scroll;
-     border-color: white;
-    border: 2px;
+    border-color: grey;
     border-style: solid;
     border-radius: 10px;
+    margin: 0px 30%;
+    font-size: 18px;
 }
 
  textarea {
   /*background: center;  This ruins default border */
-  border: 1px solid white; 
+  border: 1px solid red; 
   width: 80%;
   height: 60px;
   border-radius: 5px;
@@ -60,56 +65,80 @@ background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Fir
 
 input[type=submit]{
 
-	background-color: transparent;
+	background-color: rgb(0,113,188);
 	font-size: 20px;
 	color:white;
 	padding:7px 28px; 
     border:2px;
-    border-style: solid;
-    border-color: white;
+    /*border-style: solid;*/
+    /*border-color: white;*/
     cursor:pointer;
     border-radius: 10px;
     margin:26px;
+
 
  
 }
 
 .signupfield {
 
-	background-color:#C3EAFF;
-	font-size: 20px;
-	/*text-align: center;*/
-	color:white;
-	padding:10px 300px; 
-    border:1px;
+	background-color: #E6E6E6;
+    font-size: 18px;
+    color: black;
+    /* padding: 25px 9%; */
+    border: 1px;
     border-style: solid;
-    border-color: white;
-    cursor:pointer;
-    -webkit-border-radius: 10px;
+    border-color: #999999;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    width: 40%;
+    min-height: 2rem;
+    margin-top: 4rem;
  
 }
 .messagehere{
 
-	background-color:#C3EAFF;
-	font-size: 20px;
-	color:black;
-	padding:10px 300px; 
-    border:1px;
+	width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: black;
+    /* padding: 1px 290px; */
+    border: 2px;
     border-style: solid;
-    border-color: white;
-    cursor:pointer;
+    border-color: #999999;
+    cursor: pointer;
     -webkit-border-radius: 10px;
+    min-height: 6rem;
+    font-size: 16px;
  
 }
 .regis{
 	font-size: 15px;
-	color:white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin-top: 11px;
+    margin-left: 1rem;
 }
 
+.registed{
+	font-size: 15px;
+    color: grey;
+    text-decoration: none;
+    float: right;
+    margin-top: 11px;
+    margin-left: 1rem;
+}
+
+
 #welcome{
-	font-size: 80px;
-	margin: 200px;
+	font-size: 59px;
+    width: 100%;
+    /*background-color: white;*/
+    /*min-height: 270px;*/
+    text-align: center;
+    margin-top: 50px;
 }
 
 .welcome-regis{
@@ -133,19 +162,24 @@ input[type=submit]{
 	display: block;
 }
 
-li,.list{
+.list{
 	text-align: center;
-	color: white;
+	color: orange;
 	font-size: 30px;
 	text-decoration: none;
 	list-style-type: none;
 	line-height: 60px;
 
 }
-#bottom{
+#backtochatroom{
 	color: white;
     font-size: 20px;
+    background-color: rgb(0,113,188);
+    padding: 1rem 2rem;
+    border-radius: 5px;
     text-decoration: none;
+    margin-left: 1rem;
+	box-shadow: 10px 6px 8px #888888;
 }
 
 .floatright{
@@ -153,8 +187,136 @@ li,.list{
 	color: white;
 	font-size: 20px;
 }
-.time{
-	font-size: 12px;
-	text-align: right;
+
+
+
+.ulnavbar{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	color: white;
+	min-height: 50px;
 }
- 
+
+.linavbarleft{
+	display:inline;
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	font-size: 20px;
+	color: white;
+}
+.linavbarright{
+	display:inline;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	float: right;
+	font-size: 20px;
+	color: white;
+}
+#bluebar{
+	height: 10px;
+	width: 100%;
+	background-color: rgb(0,113,188);
+}
+.nospace{
+	line-height: 0;
+}
+
+#logo{
+	width: 10px;
+	height: 10px;
+}
+
+/*.chatroombox{
+	color: white;
+    font-size: 19px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(30,30,30);
+    display: inline;
+    text-align: center;
+    margin: 30px;
+    padding: 50px 100px;
+    border-radius: 10px;
+    text-decoration: none
+}
+*/
+
+.chatroombox{
+	background: rgb(0,113,188);
+    font-size: 20px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    min-height: 60px;
+    margin: 2rem 3.5%;
+    padding: 1.5rem 2.5%;
+    float: left;
+    border-radius: .4rem;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 10px 6px 29px #999999;
+}
+.fullwidth{
+	width: 100%
+}
+
+
+.signupbox{
+	    font-size: 32px;
+    background-color: rgb(0,113,187);	
+    color: white;
+    /* border: 5px; */
+    /* border-style: solid; */
+    box-shadow: 10px 6px 8px #888888;
+    text-decoration: none;
+    text-align: center;
+    margin: 36px;
+    width: 12%;
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.message-content, .message-user, .message{
+	display: inline
+}
+.time{
+	align-item:right;
+
+}
+
+.date{
+	font-size: 12px;margin:0;
+	padding: 0;
+	overflow: hidden;
+	font-weight: bold;
+	text-align: right;
+	line-height: 0;
+
+}
+.day{
+	font-size: 10px;
+	text-align: right;
+	line-height: 0;
+}
+
+ul< li < #textlogo{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	margin-left: 5rem;
+	margin-top: 1rem;
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+
+
+}
+

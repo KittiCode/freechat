@@ -1,20 +1,6 @@
-<h1>Chatrooms</h1>
+
 <div class="image-center">
 <%= render partial: 'chatroom_form' %>
+<h1>Chatrooms</h1>
 <%= render @chatrooms %>
-
-
-
-	<h3>All Users</h3>
-	<% @users.each do |x|%>
-		<p><%= x.username %></p>
-	<% end %>
-
-
-	<h3>Online</h3>
-	<% @users.each do |x|%>
-	<p><%=%></p>
-	<% end %>
-<%= current_user.username %>
-
 </div>

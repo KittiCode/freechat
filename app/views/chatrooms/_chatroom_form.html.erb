@@ -3,8 +3,7 @@
 <center>
 	<%= form_for @chatroom, remote: true do |f| %>
    
-    <h1>topic</h1>
-	<%= f.text_field :topic , :class=>"signupfield"%><br>
+	<%= f.text_field :topic , :placeholder=> " Topic here ...", :class=>"signupfield"%><br>
 	<%= f.submit "Create a new chatroom", :class=>"submitbutton" %>
 	<% end %>
 </center>

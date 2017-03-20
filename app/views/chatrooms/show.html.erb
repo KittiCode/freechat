@@ -1,8 +1,6 @@
 <h1><%= @chatroom.topic %></h1>
-<h2>Online User</h2>
-<% for x in @chatroom.user_ids do %>
-	<ul class="onlineuser"><li id="onlineuser"><%= User.find(x).username %></li></ul>
-<% end %>
+<%= link_to " Back to Chatrooms", chatrooms_path, :id=>"backtochatroom" %>
+
 
 <!-- All sent messages -->
 <div id="box">
@@ -21,5 +19,7 @@
 <!-- message form -->
 <%= render partial: 'messages/message_form', locals: {chatroom: @chatroom}%>
 
-	<%= link_to "Back to Chatrooms", chatrooms_path, :id=>"bottom" %>
+
+
+	
 
