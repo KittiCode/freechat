@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ 
+
+ body {
+ /*background: #DCE35B;*/
+ /*background: -webkit-linear-gradient(to left, #DCE35B , #45B649); */
+ /*background: linear-gradient(to left, #DCE35B , #45B649);*/
+ background: #56CCF2;  fallback for old browsers 
+background: -webkit-linear-gradient(to left, #56CCF2 , #2F80ED); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+        
+
+        
+ }
+ h1{
+ 	color: white;
+ 	text-align: center;
+ }
+
+
+ .message{
+ 	font-size: 20px;
+ 	text-align: left;
+ 	 
+}
+#box{
+	background: transparent;
+    width: 600px;
+    height: 500px;
+    overflow-y: scroll;
+     border-color: white;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+ textarea {
+  /*background: center;  This ruins default border */
+  border: 1px solid white; 
+  width: 80%;
+  height: 60px;
+  border-radius: 5px;
+
+}
+
+
+input[type=submit]{
+
+	background-color: transparent;
+	font-size: 20px;
+	color:white;
+	padding:7px 28px; 
+    border:2px;
+    border-style: solid;
+    border-color: white;
+    cursor:pointer;
+    border-radius: 10px;
+    margin:26px;
+
+ 
+}
+
+.signupfield {
+
+	background-color:#C3EAFF;
+	font-size: 20px;
+	/*text-align: center;*/
+	color:white;
+	padding:10px 300px; 
+    border:1px;
+    border-style: solid;
+    border-color: white;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+ 
+}
+.messagehere{
+
+	background-color:#C3EAFF;
+	font-size: 20px;
+	color:black;
+	padding:10px 300px; 
+    border:1px;
+    border-style: solid;
+    border-color: white;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+ 
+}
+.regis{
+	font-size: 15px;
+	color:white;
+	text-decoration: none;
+}
+
+#welcome{
+	font-size: 80px;
+	margin: 200px;
+}
+
+.welcome-regis{
+	font-size: 90px;
+	color:white;
+	padding: 50px 100px;
+	border:5px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50px;
+	text-decoration: none;
+	text-align: center;
+	margin: 100px;
+	/*line-height: 300px;*/
+}
+
+.image-center{
+	margin-left: auto;
+	margin-right: auto;
+	/*margin: 0 auto;*/
+	display: block;
+}
+
+li,.list{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	list-style-type: none;
+	line-height: 60px;
+
+}
+#bottom{
+	color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.floatright{
+	float: right;
+	color: white;
+	font-size: 20px;
+}
+.time{
+	font-size: 12px;
+	text-align: right;
+}
+ 
