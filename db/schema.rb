@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170319052519) do
+ActiveRecord::Schema.define(version: 20170319144925) do
 
   create_table "chatrooms", force: :cascade do |t|
     t.string   "topic"
@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(version: 20170319052519) do
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end
