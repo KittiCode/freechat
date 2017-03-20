@@ -1,6 +1,14 @@
+<ul>
+<% Chatroom.all.each do |x|%>
+<li class="chatroomslistinshow"><%= x.topic %></li>
+<% end %>
+</ul>
+
 <br>
-<h1><%= @chatroom.topic %></h1>
-<%= link_to " Back to Chatrooms", chatrooms_path, :id=>"backtochatroom" %>
+<h1 class="chatroomtopic"><%= @chatroom.topic %></h1>
+<%= link_to "Back to Chatrooms", chatrooms_path, :id=>"backtochatroom" %>
+
+
 
 
 <!-- All sent messages -->
@@ -22,5 +30,4 @@
 
 
 
-	
 
