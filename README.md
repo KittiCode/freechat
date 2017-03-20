@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このアプリはfreee株式会社インターンの課題として作ってきました。
+LINEアプリのようなCHATアプリの作成に頑張って開発してきましたが、まだまだLINEとは比較できないですが、よろしくお願いたします。
+アプリのurl　は　https://freeelineapp.herokuapp.com/
+ご拝見してみてください。
+宜しくお願いmします。
+ 横浜国立大学経済学部　Kittichote Kamalapirat
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
