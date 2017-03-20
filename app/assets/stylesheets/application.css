@@ -19,9 +19,9 @@
  /*background: #DCE35B;*/
  /*background: -webkit-linear-gradient(to left, #DCE35B , #45B649); */
  /*background: linear-gradient(to left, #DCE35B , #45B649);*/
- background: #56CCF2; /* fallback for old browsers */
+ background: #56CCF2;  fallback for old browsers 
 background: -webkit-linear-gradient(to left, #56CCF2 , #2F80ED); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #56CCF2 , #2F80ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to left, #56CCF2 , #2F80ED);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
         
 
         
@@ -84,7 +84,6 @@ input[type=submit]{
     border:1px;
     border-style: solid;
     border-color: white;
-    background;
     cursor:pointer;
     -webkit-border-radius: 10px;
  
