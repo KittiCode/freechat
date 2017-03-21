@@ -13,9 +13,7 @@ class ChatroomsController < ApplicationController
     @chatroom = Chatroom.new
   end
 
-  def edit
-    @chatroom = Chatroom.find_by(slug: params[:slug])
-  end
+  
 
   def create
     @chatroom = Chatroom.new(chatroom_params)
@@ -34,18 +32,13 @@ class ChatroomsController < ApplicationController
     end
   end
 
-  def update
-    chatroom = Chatroom.find_by(slug: params[:slug])
-    chatroom.update(chatroom_params)
-    redirect_to chatroom
-  end
 
   def show
     @chatroom = Chatroom.find(params[:id])
     @message = Message.new
-    @chatroom.users << current_user
-    ActionCable.server.broadcast 'room_channel',
-                                   onlineuser:  current_user.username
+    # @chatroom.users << current_user
+    # ActionCable.server.broadcast 'room_channel',
+    #                                onlineuser:  current_user.username
                                    
   end
 
